@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for item in items %}
+
+        <h3><a href="{% url 'cafe_menulist' pk=item.id %}">{{ item.name }}</a></h3>
+
+    {% endfor %}
+{% endblock content %}
